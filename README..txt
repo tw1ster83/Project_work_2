@@ -1,7 +1,29 @@
-Описание назначения веток
+GITFLOW_PRJ111
+ 
+ 
+Проект расположен по адресу
+Https://github.com/tw1ster83/Project_work_2
 
-Проект расположен по адресу 
-https://github.com/tw1ster83/Project_work_2
+Прежде чем начать разработку сделайте первоначальную настройку среды разработки у себя на рабочем месте
+Каждый выбирает удобную для себя IDE. 
+Я же рекомендую SmartGit
+скачиваем программу с официального сайта www.syntevo.com, со странички http://www.syntevo.com/smartgithg/download;
+Описание установки http://all-ht.ru/inf/prog/git_003.html
+В качетве начального конфига можно использовать файл https://github.com/tw1ster83/Project_work_2/blob/master/.gitconfig
+Либо самостоятельно внести изменения 
+1. Указываем имя пользователя 
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+Указываем редактор по умолсанию  у меня это notepad++
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+Для удобства просмотра ветвления можно добавить алиас
+git config --global alias.history '!git log --graph'
+
+Чтобы проверить используемую конфигурацию, можете использовать команду 
+git config --list
+
+Описание назначения веток
 PROD - Основная ветка проекта.
       Все, что находится в этой ветке должно работать на PROD сервере. При каждом деплое делается новая версия пакета (в gitlab – “теги”). Обязательная ветка для проекта.
 HOTFIX - ветка для быстрых исправлений в prod.
