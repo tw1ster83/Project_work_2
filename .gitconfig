@@ -1,0 +1,7 @@
+[user]
+	name = tw1ster83
+	email = tw1ster@ngs.ru
+[alias]
+	history = !git log --graph
+[core]
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
